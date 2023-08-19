@@ -16,7 +16,7 @@
     <div class = "container">
         <navbar>
             <ul class="navbar">
-                <li><a href="index.html">MyNest</a></li>
+                <li><a href="../index.html">MyNest</a></li>
                 <li><a href="./seller_page.html">Sellers</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="loginpage.html">Your Profile</a></li>
@@ -25,18 +25,18 @@
 
         <div class = "gallery">
             <div id = "left">&#9668;</div>
-            <div id = "contain"><img src = "public_assets/house.jpg" alt = "house image" class = "image"></div>
+            <div id = "contain"><img src = "../public_assets/house.jpg" alt = "house image" class = "image"></div>
             <div id = "right">&#9658;</div>
         </div>
 
         <div class = "data">
             <div class = "basic">
-                <p><span class = "label">Name: </span>Carleston Nest Apartment</p>
+                <p><span class = "label">Name: </span>Carleston Nest Apartment (3BHK)</p>
                 <p><span class = "label">Owner: </span>Mr. Mahesh Pandit Kumar Baweja</p>
                 <p><span class = "label">Address: </span>17, Lloyd Rd, Balaji Layout, Cooke Town, Bengaluru, Karnataka 560005</p>
                 <p><span class = "label">Area: </span>2000 sq ft</p>
                 <p class = "price">Price: &#x20B9;20,000 (INR)</p>
-                <button class = "clickable">Apply Now</button>
+                <button class = "clickable">Buy Now</button>
             </div>
 
             <div class = "unique">
@@ -152,7 +152,7 @@
 
             function appendImage(imageSrc) {
             const img = document.createElement('img');
-            img.src = `public_assets/${imageSrc}`;
+            img.src = `../public_assets/${imageSrc}`;
             img.alt = imageSrc;
             img.style.width = '50px';
             img.style.height = '50px';
