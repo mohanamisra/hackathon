@@ -1,4 +1,4 @@
-# MyNest 
+# MyNest 🏠
 In the ever-evolving landscape of real-estate, MyNest shines as a one-stop solution for people looking for their ideal home. We understand that home-buying is complicated and stressful. The least that you deserve is complete and genuine transparency about the location you're going to live in, no ambiguous paperwork, no unpleasant surprises, no secrets.
 
 ### Link to the hosted prototype: 
@@ -16,8 +16,10 @@ We believe the decision is yours, so we present 100% verified objective data fro
 
 ### DevLog [dates in dd/mm/yyyy format]
 
-Project started: 17/8/2023 
-Home page (with API integration): 17/8/2023 
-User complaint page implemented: 18/8/2023 
-Login/Sign up feature implemented: 18/8/2023 
+Project started: 17/8/2023  
+Home page (with API integration): 17/8/2023  
+User complaint page implemented: 18/8/2023  
+Login/Sign up feature implemented: 18/8/2023  
 Property Detail page completed: 19/8/2023
+Final Styling: 19/8/2023  
+Prototype Hosting: 19/8/2023
