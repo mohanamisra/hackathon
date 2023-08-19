@@ -13,7 +13,7 @@
 <body>
 <div class="container">
   <h1>Housing Issues & Complaints</h1>
-  <form action="property.html" method="get" enctype="multipart/form-data" onsubmit="handleFormSubmit(event)">
+  <form action="property_pages/property.html" method="get" enctype="multipart/form-data" onsubmit="handleFormSubmit(event)">
     <label for="issue">Select Any Ongoing Issues:</label>
     <select id="issue" name="issue">
       <option value="Construction Activity">Construction Activity</option>
@@ -71,7 +71,7 @@
   const name = document.getElementById('name').value; // Get the user's name
 
   // Build URL with parameters
-  const url = `property.html?issue=${selectedIssue}&rating=${selectedRating}&opinion=${opinion}&name=${name}`;
+  const url = `property_pages/property.html?issue=${selectedIssue}&rating=${selectedRating}&opinion=${opinion}&name=${name}`;
 
   // Redirect to property.html with parameters
   window.location.href = url;

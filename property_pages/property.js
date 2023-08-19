@@ -20,7 +20,7 @@ function pickPhoto() {
 }
 
 let images = [
-    "public_assets/house.jpg",
-    "public_assets/house1.jpg",
-    "public_assets/house2.jpg"
+    "../public_assets/house.jpg",
+    "../public_assets/house1.jpg",
+    "../public_assets/house2.jpg"
 ]
