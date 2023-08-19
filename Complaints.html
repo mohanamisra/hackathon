@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="complaints_style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+<title>Resident Issues & Complaints</title>
+</head>
+<body>
+<div class="container">
+  <h1>Housing Issues & Complaints</h1>
+  <form action="property.html" method="get" enctype="multipart/form-data" onsubmit="handleFormSubmit(event)">
+    <label for="issue">Select Any Ongoing Issues:</label>
+    <select id="issue" name="issue">
+      <option value="Construction Activity">Construction Activity</option>
+      <option value="Noise">Noise</option>
+      <option value="Potholes/Road Issues">Potholes/Road Issues</option>
+      <option value="Security Concern">Security Concern</option>
+    </select>
+
+    <label for="rating">Cultural Inclusivity Marker:</label>
+    <select id="rating" name="rating">
+      <option value="Excellent">Excellent</option>
+      <option value="Good">Good</option>
+      <option value="Minimal Biases">Minimal Biases</option>
+      <option value="Severely Biased">Severely Biased</option>
+      <option value="Dangerous">Dangerous</option>
+    </select>
+
+    <label for="comment">Your Opinion:</label>
+    <textarea id="comment" name="comment" rows="4"></textarea>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="photo">Upload Photo (proof of issue):</label>
+    <input type="file" id="photo" name="photo" accept="image">
+
+    <button type="submit" class="submitButton">Submit</button>
+  </form>
+
+  <div class="complaints">
+    <h2>Recent Complaints</h2>
+    <div class="complaint">
+      <h3>Maintenance Problem</h3>
+      <p>Our faucet has been leaking for a week, and no one has come to fix it yet.</p>
+      <div class="rating">Rating: 3 Stars</div>
+      <img src="fotouwu.jpg" alt="Issue Photo">
+    </div>
+    <div class="complaint">
+      <h3>Security Concern</h3>
+      <p>The front gate doesn't close properly, compromising the security of the complex.</p>
+      <div class="rating">Rating: 2 Stars</div>
+      <img src="uwu.jpg" alt="Issue Photo">
+    </div>
+    <!-- Add more complaints here -->
+  </div>
+</div>
+
+<script>
+  function handleFormSubmit(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  // Get form values
+  const selectedIssue = document.getElementById('issue').value;
+  const selectedRating = document.getElementById('rating').value;
+  const opinion = document.getElementById('comment').value;
+  const name = document.getElementById('name').value; // Get the user's name
+
+  // Build URL with parameters
+  const url = `property.html?issue=${selectedIssue}&rating=${selectedRating}&opinion=${opinion}&name=${name}`;
+
+  // Redirect to property.html with parameters
+  window.location.href = url;
+  }
+</script>
+</body>
+</html>
