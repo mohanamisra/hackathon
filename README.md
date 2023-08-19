@@ -1,7 +1,7 @@
 # MyNest 🏠
 In the ever-evolving landscape of real-estate, MyNest shines as a one-stop solution for people looking for their ideal home. We understand that home-buying is complicated and stressful. The least that you deserve is complete and genuine transparency about the location you're going to live in, no ambiguous paperwork, no unpleasant surprises, no secrets.
 
-### Link to the hosted prototype: 
+### Link to the hosted prototype: <a href = "https://mohanamisra.github.io/hackathon/">MyNest Working Prototype (MVP)</a>
 
 ### User-Guide 
 <ul>
